@@ -9,21 +9,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href="css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <section id="hero-section">
+      <h1>Weather Ap(i)p</h1>
+  </section>
+  <section class="main-section">
 
-  <p>Type in the name of a city to see it's current weather</p>
-  <input id="city-input" type="text" placeholder="City Name"></input>
-  <button id="search-button">Search</button>
+    <div class="input-section">
+      <p>Type in the name of a city to see it's current weather</p>
+      <div class="input-inner">
+        <input id="city-input" type="text" placeholder="City Name"></input>
+        <button id="search-button">Search</button>
+      </div>
+    </div>
+    <div id="display-weather">
+      <h2 id="weather-title"></h2>
+      <h2 id="weather-location"></h2>
+      <div id="weather-information">
+        <p id="weather-weather"></p>
+        <p id="weather-temperature"></p>
+        <p id="response-time"></p>
+      </div>
+    </div>
+  </section>
 
-  <div class="display-weather">
-    <h2 id="weather-location"></h2>
-    <p id="weather-weather"></p>
-    <p id="weather-temperature"></p>
-    <p id="response-time"></p>
-  </div>
 
+
+
+  <script type='text/javascript' src='js/config.js'></script>
   <script src="js/script.js"></script>
 </body>
 

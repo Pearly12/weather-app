@@ -1,9 +1,151 @@
-.display-weather{
-    padding: 25px;
-    box-shadow: 2px 2px 7px 0px;
-    width: 300px;
-    margin-top: 30px;
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* TYPOGRAPHY */
+
+body{
+    font-family: 'Cabin', sans-serif;
+    background-color: #f4bfc4;
+}
+
+h1{
+    font-size: 120px;
+    text-align: center;
+    font-weight: 900;
+    color:#95cbee;
+}
+
+.input-section p{
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.input-section input,
+.input-section button{
+    padding: 10px 5px;
+    line-height: 1.2;
+    font-size: 18px;
+    margin: 0px;
+}
+
+#display-weather h2{
+    padding: 15px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+#weather-title{
+    text-align: center;
+}
+
+#weather-information p{
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+/* Containers */
+#hero-section{
+    background: url(../images/orange_clouds.jpg) no-repeat;
+    background-position:center;
+    width: 100%;
+    height: 450px;
+    padding: 0;
+    margin: 0;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
+
+.main-section{
+    max-width: 1140px;
+    margin:0 auto;
+    padding: 50px 25px;
+}
+
+.input-section{
+    padding-top: 50px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#display-weather{
+    background: rgba(255,255,255, 0.6);
+    display: none;
+    padding: 25px;
+    box-shadow: 2px 2px 7px 0px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+#weather-information{
+    padding: 20px;
+}
+
+/* Components */
+#search-button{
+    background-color: #95cbee;
+    padding: 10px 20px;
+    font-weight: 600;
+    color: #000;
+    border: 2px solid black;
+}
+
+.input-section input{
+    width: 70%;
+    border: 2px solid #000;
+}
+
+
+
+
+
